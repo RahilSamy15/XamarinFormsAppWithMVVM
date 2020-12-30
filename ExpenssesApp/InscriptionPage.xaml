@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ExpenssesApp.InscriptionPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="MonStack" Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Entry Placeholder="EMAIL" Text="{Binding Email,Mode=TwoWay}" x:Name="email" Keyboard="Email" HorizontalOptions="FillAndExpand" Margin="20,0"/>
+            <Entry Placeholder="PASSWORD" Text="{Binding Password,Mode=TwoWay}" x:Name="PASS" IsPassword="True" Margin="20,0" HorizontalOptions="FillAndExpand"/>
+            <Entry Placeholder="PASSWORD VERIFY" x:Name="PASSVERIFY" IsPassword="True" Margin="20,0" HorizontalOptions="FillAndExpand"/>
+            <Button TextColor="White" Clicked="Inscrip" Text="S'inscrire" BackgroundColor="DodgerBlue" Margin="20,20,20,0" HorizontalOptions="FillAndExpand" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

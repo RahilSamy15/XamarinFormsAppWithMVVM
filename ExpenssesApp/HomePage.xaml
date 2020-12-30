@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            x:Class="ExpenssesApp.HomePage"
+            xmlns:local="clr-namespace:ExpenssesApp">
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem x:Name="AddItem" Text="Add"  Command="NavCommand"></ToolbarItem>
+    </TabbedPage.ToolbarItems>
+   <local:HistoryPage Title="Historique" Icon="home.png" ></local:HistoryPage>
+    <local:MapPage Title="Map" Icon="map.png"></local:MapPage>
+    <local:ProfilePage Title="Profile" Icon="person.png"></local:ProfilePage>
+</TabbedPage>

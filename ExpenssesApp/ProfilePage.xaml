@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ExpenssesApp.ProfilePage">
+    <ContentPage.Content>
+           <StackLayout>
+                <Label 
+                Margin="30,40,35,0"
+                x:Name="postcompterLabel"
+                HorizontalOptions="Center"
+                TextColor="DodgerBlue"
+                FontSize="Medium"
+                FontAttributes="Bold"/>
+            
+                <Label
+                Text="Publication"
+                x:Name="posts"
+                HorizontalOptions="Center"
+                TextColor="LightGray"
+            FontAttributes="Bold"/>
+            <ListView x:Name="CatergoriesList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        
+                            <TextCell 
+                            Text="{Binding Path=Key}"
+                            Detail="{Binding Path=Value}"/>
+                      
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
