@@ -4,7 +4,7 @@
             x:Class="ExpenssesApp.HomePage"
             xmlns:local="clr-namespace:ExpenssesApp">
     <TabbedPage.ToolbarItems>
-        <ToolbarItem x:Name="AddItem" Text="Add"  Command="NavCommand"></ToolbarItem>
+        <ToolbarItem x:Name="AddItem" Text="Add"  Command="{Binding NavigationCommand}"></ToolbarItem>
     </TabbedPage.ToolbarItems>
    <local:HistoryPage Title="Historique" Icon="home.png" ></local:HistoryPage>
     <local:MapPage Title="Map" Icon="map.png"></local:MapPage>

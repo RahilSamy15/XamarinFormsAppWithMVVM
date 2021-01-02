@@ -15,9 +15,6 @@ namespace ExpenssesApp
             BindingContext = ViewModel;
         }
 
-        void Handle_Clicked(object sender, System.EventArgs e)
-        {
-            Navigation.PushAsync(new TravelPage());
-        }
+        
     }
 }

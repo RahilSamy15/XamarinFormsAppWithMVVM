@@ -11,9 +11,9 @@ namespace ExpenssesApp.ViewModel
             NavCommand = new NavigationCommand(this);
 
         }
-        public void Navigate()
+        public async void Navigate()
         {
-
+           await App.Current.MainPage.Navigation.PushAsync(new HomePage());
         }
             
     }
